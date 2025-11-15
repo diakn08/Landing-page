@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyrgyzstan Frozen Lakes - Tynchtyk MR</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tour-detail.css">
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="window.location.href='index.html'">TYNCHTYK MR</div>
+    <div class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html#tours">TOURS</a>
+      <a href="index.html#services">GALLERY</a>
+      <a href="index.html#contact">COOPERATION</a>
+    </nav>
+    <button class="inquire-btn" onclick="window.location.href='index.html'; setTimeout(() => document.getElementById('contactModal').classList.add('active'), 500)">INQUIRE NOW</button>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="tour-hero">
+    <div class="tour-hero-content">
+      <h1>Kyrgyzstan Frozen Lakes<br>Kel-Suu & Ara-Kol & Orto-Tokoy</h1>
+      <div class="tour-meta">
+        <p><strong>Duration:</strong> 5 Days</p>
+        <p><strong>Dates:</strong> 10-14 January 2026</p>
+      </div>
+      <div class="tour-price">PRICE: 1550 USD</div>
+    </div>
+  </section>
+
+  <!-- ACTION BUTTONS -->
+  <section class="tour-actions">
+    <button class="btn-outline" onclick="alert('Brochure download coming soon!')">Download Brochure</button>
+    <button class="btn-filled" onclick="openBookingModal()">Book Now</button>
+  </section>
+
+  <!-- TOUR DESCRIPTION -->
+  <section class="tour-description">
+    <div class="container">
+      <div class="tour-guide">
+        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=400&q=80" alt="Tynchtyk Mukhambetov">
+        <div>
+          <h3>Tynchtyk Mukhambetov</h3>
+          <p>A professional drone pilot & photographer</p>
+        </div>
+      </div>
+
+      <div class="tour-desc-text">
+        <p>This 5-day journey takes you through the heart of Kyrgyzstan, from Bishkek to Naryn and the stunning Kel-Suu Lake at 3,200 m. Explore Kegeti Gorge and Chon Kemin National Park, enjoy horseback riding, watch the traditional Kok Boru game, visit frozen lakes for photography and ice activities, and see the historic Tash Rabat caravanserai. Experience breathtaking mountain landscapes and warm Kyrgyz hospitality in cozy guesthouses and hotels.</p>
+
+        <h3>Highlights:</h3>
+        <ul>
+          <li><strong>Kegeti Gorge:</strong> Scenic walk and photography opportunities.</li>
+          <li><strong>Chon Kemin:</strong> Two-hour horseback ride and traditional Kok Boru horse game.</li>
+          <li><strong>Orto-Tok & Ara Kol:</strong> Frozen lakes, photography, and ice activities.</li>
+          <li><strong>Tash Rabat:</strong> Historic stone caravanserai in the mountains.</li>
+          <li><strong>Kel-Suu:</strong> Walk on the frozen lake and stunning mountain landscapes.</li>
+          <li><strong>Kok-Moinok Canyon:</strong> Scenic canyon on the way back to Bishkek.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section class="tour-gallery">
+    <h2>PHOTOS AND DESTINATIONS OF THE TOUR</h2>
+    <p class="swipe-text">SWIPE TO SEE MORE</p>
+    
+    <div class="gallery-slider">
+      <button class="slider-btn prev" onclick="moveSlide(-1)">‹</button>
+      <div class="gallery-container">
+        <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=1600&q=80" alt="Frozen Lake 1">
+        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=1600&q=80" alt="Frozen Lake 2">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=80" alt="Mountains">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80" alt="Landscape">
+      </div>
+      <button class="slider-btn next" onclick="moveSlide(1)">›</button>
+    </div>
+    
+    <div class="slider-dots">
+      <span class="dot active" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+
+  <!-- TOUR PROGRAM -->
+  <section class="tour-program">
+    <div class="container">
+      <div class="program-header">
+        <p><strong>5 days, 10-14 January 2026</strong></p>
+        <p>Guaranteed from 5 pax</p>
+        <p><strong>Max size of the group 11 pax</strong></p>
+      </div>
+
+      <h2>Program of the tour: Kyrgyzstan Frozen Lakes<br>Kel-Suu & Ara-Kol & Orto-Tokoy</h2>
+
+      <div class="day-accordion">
+        <div class="day-item">
+          <div class="day-header" onclick="toggleDay(this)">
+            <h3>Day 1: Bishkek - Chon-Kemin <span class="date">January 10th</span></h3>
+            <span class="plus">+</span>
+          </div>
+          <div class="day-content">
+            <p>Start your journey from Bishkek and travel to Chon-Kemin National Park. Enjoy scenic views along the way and settle into your guesthouse. In the afternoon, experience traditional Kyrgyz culture with a horseback riding session and watch the exciting Kok Boru horse game.</p>
+            <p><strong>Accommodation:</strong> Guesthouse in Chon-Kemin</p>
+            <p><strong>Meals:</strong> Lunch, Dinner</p>
+          </div>
+        </div>
+
+        <div class="day-item">
+          <div class="day-header" onclick="toggleDay(this)">
+            <h3>Day 2: Chon Kemin - Naryn <span class="date">January 11th</span></h3>
+            <span class="plus">+</span>
+          </div>
+          <div class="day-content">
+            <p>After breakfast, continue your journey to Naryn. Stop at Kegeti Gorge for stunning photography opportunities. Arrive in Naryn and check into your hotel. Explore the local area and enjoy traditional Kyrgyz cuisine for dinner.</p>
+            <p><strong>Accommodation:</strong> Hotel in Naryn</p>
+            <p><strong>Meals:</strong> Breakfast, Lunch, Dinner</p>
+          </div>
+        </div>
+
+        <div class="day-item">
+          <div class="day-header" onclick="toggleDay(this)">
+            <h3>Day 3: Naryn - Kel-Suu <span class="date">January 12th</span></h3>
+            <span class="plus">+</span>
+          </div>
+          <div class="day-content">
+            <p>Today's highlight is the magnificent Kel-Suu Lake at 3,200 meters. Walk on the frozen lake surface and capture incredible photographs of the surrounding mountain landscapes. Visit the historic Tash Rabat caravanserai. Return to Naryn for the night.</p>
+            <p><strong>Accommodation:</strong> Hotel in Naryn</p>
+            <p><strong>Meals:</strong> Breakfast, Lunch, Dinner</p>
+          </div>
+        </div>
+
+        <div class="day-item">
+          <div class="day-header" onclick="toggleDay(this)">
+            <h3>Day 4: Kel-Suu - Naryn <span class="date">January 13th</span></h3>
+            <span class="plus">+</span>
+          </div>
+          <div class="day-content">
+            <p>Spend more time at Kel-Suu for photography and ice activities. Experience the tranquility of the frozen lake and dramatic mountain scenery. Return to Naryn in the evening and enjoy a traditional dinner with locals.</p>
+            <p><strong>Accommodation:</strong> Hotel in Naryn</p>
+            <p><strong>Meals:</strong> Breakfast, Lunch, Dinner</p>
+          </div>
+        </div>
+
+        <div class="day-item">
+          <div class="day-header" onclick="toggleDay(this)">
+            <h3>Day 5: Naryn - Bishkek <span class="date">January 14th</span></h3>
+            <span class="plus">+</span>
+          </div>
+          <div class="day-content">
+            <p>After breakfast, begin your return journey to Bishkek. Stop at Kok-Moinok Canyon for scenic views and photo opportunities. Arrive in Bishkek in the evening, concluding your unforgettable winter adventure in Kyrgyzstan.</p>
+            <p><strong>Meals:</strong> Breakfast, Lunch</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tour-note">
+        <p><strong>Please note:</strong> some areas we visit during the tour may experience temperatures as low as 40 degrees below zero. We recommend being well-prepared and dressed for such conditions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S INCLUDED -->
+  <section class="tour-included">
+    <div class="container">
+      <div class="included-grid">
+        <div class="included-col">
+          <h2>WHAT IS INCLUDED:</h2>
+          <ul>
+            <li>Accommodations as indicated</li>
+            <li>Transport during the trip (2 pax - 1 jeep, 3-5 pax - 2 jeeps, 6-8 - 3 jeeps, 9-11 4 jeeps, 4WD jeep car)</li>
+            <li>Equipment for Skating on ice</li>
+            <li>Entrance fees to sites listed</li>
+            <li>Full-board Meal (breakfast, lunch and dinner)</li>
+            <li>English speaking guide</li>
+            <li>Tynchtyk MR's guiding and his salary.</li>
+            <li>Ecological fee</li>
+            <li>Mineral water 1L per pax per day</li>
+          </ul>
+        </div>
+
+        <div class="included-col">
+          <h2>WHAT IS NOT INCLUDED:</h2>
+          <ul>
+            <li>International Air tickets</li>
+            <li>Transfer from/to airport (in case you will leave at the same day when the tour will finish we can organize you a transfer to the airport)</li>
+            <li>Extra service in the hotels</li>
+            <li>Tips to the drivers</li>
+            <li>Travel Insurance</li>
+            <li>Health insurance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <button class="btn-outline" onclick="alert('Brochure download coming soon!')">Download Brochure</button>
+    <button class="btn-filled" onclick="openBookingModal()">Book Now</button>
+  </section>
+
+  <!-- BOOKING MODAL -->
+  <div class="booking-modal" id="bookingModal">
+    <div class="booking-modal-content">
+      <span class="close-booking" onclick="closeBookingModal()">&times;</span>
+      
+      <div class="booking-header">
+        <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=200&q=80" alt="Tour" class="booking-tour-img">
+        <div class="booking-tour-info">
+          <h2>Kyrgyzstan Frozen Lakes. Kel-Suu & Ara-Kol & Orto-Tokoy</h2>
+          <p><span>📅</span> Jan 10 - 14, 2026</p>
+        </div>
+      </div>
+
+      <div class="booking-steps">
+        <div class="step active">Package</div>
+        <div class="step">Participant Info</div>
+        <div class="step">Insurance</div>
+        <div class="step">Payment</div>
+      </div>
+
+      <div class="booking-body">
+        <div class="booking-left">
+          <h3>Select package</h3>
+          
+          <div class="package-option">
+            <div class="package-header">
+              <div class="package-info">
+                <input type="radio" name="package" id="twin" value="1550" onchange="updateTotal()">
+                <label for="twin">
+                  <strong>package with twin share room</strong>
+                  <span class="deposit">Deposit: $200</span>
+                </label>
+              </div>
+              <div class="package-price">$1,550</div>
+            </div>
+            <div class="package-counter">
+              <span>👤</span>
+              <button onclick="changeCount('twin', -1)">-</button>
+              <input type="number" id="twin-count" value="0" min="0" readonly>
+              <button onclick="changeCount('twin', 1)">+</button>
+            </div>
+          </div>
+
+          <div class="package-option">
+            <div class="package-header">
+              <div class="package-info">
+                <input type="radio" name="package" id="single" value="1750" onchange="updateTotal()">
+                <label for="single">
+                  <strong>package with single room</strong>
+                  <span class="deposit">Deposit: $200</span>
+                </label>
+              </div>
+              <div class="package-price">$1,750</div>
+            </div>
+            <div class="package-counter">
+              <span>👤</span>
+              <button onclick="changeCount('single', -1)">-</button>
+              <input type="number" id="single-count" value="0" min="0" readonly>
+              <button onclick="changeCount('single', 1)">+</button>
+            </div>
+          </div>
+
+          <div class="payment-options">
+            <h3>Payment Options</h3>
+            <div class="payment-radio">
+              <input type="radio" name="payment" id="full" checked>
+              <label for="full">Pay full amount — <span id="full-amount">$0.00</span></label>
+            </div>
+          </div>
+
+          <button class="continue-btn" onclick="alert('Booking system will be integrated soon!')">Continue</button>
+        </div>
+
+        <div class="booking-right">
+          <h3>Your Booking</h3>
+          <div class="currency-selector">
+            <span>🇺🇸</span>
+            <select>
+              <option>USD</option>
+              <option>EUR</option>
+              <option>GBP</option>
+            </select>
+          </div>
+          <div class="booking-total">
+            <span>Trip Total</span>
+            <span class="total-amount" id="total-amount">$0.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="socials">
+      <a href="#" class="social-icon">📷</a>
+      <a href="#" class="social-icon">▶️</a>
+    </div>
+    <p>© 2025 All rights reserved | Tynchtyk MR</p>
+    <a href="#" class="back-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Back to top ↑</a>
+  </footer>
+
+  <script src="tour-detail.js"></script>
+</body>
+</html>
